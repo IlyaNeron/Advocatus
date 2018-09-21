@@ -1,0 +1,45 @@
+.nav {
+  float: right;
+
+  &-opener {
+    display: none;
+  }
+
+  &-menu {
+    @include inline-space-reset;
+    @extend %listreset;
+
+    li {
+      @include inline-space(16px);
+      display: inline-block;
+      text-transform: uppercase;
+      
+      &:not(:last-child) {
+        padding-right: 20px;
+      }
+
+      a {
+        display: block;
+        padding: 10px;
+        @include animate(border color border-color);
+
+        &:hover {
+          border-bottom: 5px solid $yellow;
+          color: initial;
+        }
+
+      }
+
+      &.active-link {
+
+        a {
+          border-bottom: 5px solid $yellow;
+        }
+
+      }
+
+    }
+
+  }
+
+}

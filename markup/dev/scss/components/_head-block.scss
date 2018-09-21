@@ -1,0 +1,39 @@
+.head-block {
+  max-width: 800px;
+  font-family: $second-font-family;
+  font-size: 20px;
+  padding-left: 15px;
+  border-left: 2px solid $yellow;
+  position: relative;
+  z-index: 2;
+  margin: 0 0 60px;
+
+  .bg-item {
+    font-size: 195px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    color: $black;
+    line-height: 0.6;
+    font-family: $base-font-sans-serif;
+    opacity: 0.1;
+    z-index: -1;
+    letter-spacing: -20px;
+  }
+
+  &-second {
+    color: $gray;
+
+    h2 {
+      color: $white;
+    }
+
+    .bg-item {
+      color: $white;
+    }
+
+  }
+
+}
+

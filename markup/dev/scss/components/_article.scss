@@ -1,0 +1,57 @@
+.article {
+  line-height: 2;
+  border-bottom: 2px solid $yellow;
+
+  &-image {
+    display: block;
+    margin: 0 0 30px;
+  }
+
+  .item-head {
+    font-size: 16px;
+    margin: 0 0 40px;
+
+    h3 {
+      margin: 0 0 10px;
+    }
+
+    .by {
+      color: $black;
+
+      span {
+        font-style: italic;
+        color: $medium-gray;
+      }
+
+    }
+
+    .date-text {
+      float: right;
+    }
+
+  }
+
+  .text {
+    line-height: 2;
+    margin: 0 0 30px;
+  }
+
+  .item-bottom {
+    font-size: 16px;
+    color: $black;
+
+    i {
+      padding-right: 10px;
+    }
+
+    .comment {
+      float: left;
+    }
+
+    .share {
+      float: right;
+    }
+
+  }
+
+}

@@ -1,16 +1,16 @@
 .btn {
+  @include animate(color background border);
   border-radius: $btn-border-radius;
   padding: $btn-padding;
   font-size: $btn-font-size;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
   font-family: $second-font-family;
-  text-transform: uppercase;
   border: $btn-border;
-  outline: none;
-  @include animate(color background border);
-  cursor: pointer;
   min-width: $btn-min-width;
+  font-family: $btn-font-family;
+  cursor: pointer;
+  outline: none;
   display: inline-block;
   vertical-align: top;
 
@@ -19,20 +19,9 @@
     background-color: $btn-background-color;
 
     &:hover {
-      background: $red;
-      color: $white;
-    }
-
-  }
-
-  &-secondary {
-    background: $red;
-    color: $white;
-    border: $btn-secondary-border;
-
-    &:hover {
-      background: $dark-gray;
-      color: $white;
+      background: $white;
+      color: $yellow;
+      border: 1px solid $yellow;
     }
 
   }
@@ -44,8 +33,7 @@
 
   .btn {
 
-    &-primary,
-    &-secondary {
+    &-primary {
       padding: 15px;
     }
 
@@ -57,8 +45,7 @@
 
   .btn {
 
-    &-primary,
-    &-secondary {
+    &-primary {
       min-width: 100%;
     }
 

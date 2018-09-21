@@ -1,0 +1,30 @@
+.row {
+  @include inline-space-reset;
+  margin: 0 -15px;
+
+  .col {
+    @include inline-space(14px);
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px 30px;
+    width: 100%;
+
+    &-sm {
+      width: (100%/4);
+    }
+
+    &-md {
+      width: (100%/3);
+    }
+
+    &-lg {
+      width: (100%/2);
+    }
+
+    &-xl {
+      width: (100%/1.5);
+    }
+
+  }
+
+}

@@ -1,0 +1,33 @@
+.area-content {
+  max-width: 1020px;
+  margin: 0 auto;
+
+  .col {
+    color: $white;
+    line-height: 2;
+    padding: 0 50px 70px;
+
+    .item-image {
+      float: left;
+      font-size: 45px;
+      margin-right: 30px;
+      color: $yellow;
+
+      i {
+        display: block;
+      }
+
+    }
+
+    .item-text {
+      overflow: hidden;
+
+      h3 {
+        color: $white;
+      }
+
+    }
+
+  }
+
+}

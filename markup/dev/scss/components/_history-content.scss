@@ -1,0 +1,31 @@
+.history-content {
+
+  ul {
+    @include inline-space-reset;
+    @extend %listreset;
+
+    li {
+      @include inline-space(16px);
+      position: relative;
+      padding-left: 110px;
+      color: $black;
+      line-height: 1.5;
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      .item-year {
+        font-size: 21px;
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: $black;
+      }
+
+    }
+
+  }
+
+}

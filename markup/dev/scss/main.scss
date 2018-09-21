@@ -8,16 +8,35 @@
 @import 'base/buttons';
 @import 'base/helpers';
 @import 'base/forms';
+@import 'base/typography';
+
+@import 'components/logo';
+@import 'components/nav';
+@import 'components/main-section';
+@import 'components/main-section-content';
+@import 'components/head-block';
+@import 'components/section-about';
+@import 'components/row';
+@import 'components/history-content';
+@import 'components/expertise-content';
+@import 'components/area-section';
+@import 'components/area-content';
+@import 'components/section-person';
+@import 'components/person-items';
+@import 'components/section-quote';
+@import 'components/carousel';
+@import 'components/section-publications';
+@import 'components/article';
+@import 'components/section-tabs';
+@import 'components/soc-icons';
+@import 'components/tabs';
+@import 'components/section-form';
+@import 'components/contact-block';
+@import 'components/map-block';
+@import 'components/form';
 
 @import 'layouts/wrapper';
 @import 'layouts/header';
 @import 'layouts/main';
 @import 'layouts/footer';
-
-
-
-
-
-body {
-  background: skyblue;
-}
+@import 'layouts/container';

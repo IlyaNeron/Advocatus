@@ -1,0 +1,27 @@
+.main-section-content {
+  position: absolute;
+  bottom: 140px;
+  left: 0;
+  right: 0;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .block-name {
+    float: left;
+    border-left: 2px solid $yellow;
+    padding-left: 15px;
+
+    h2 {
+      color: $white;
+      font-family: $base-font-sans-serif;
+    }
+  
+  }
+
+  .btn-primary {
+    float: right;
+    margin: 20px 0 0;
+  }
+
+}

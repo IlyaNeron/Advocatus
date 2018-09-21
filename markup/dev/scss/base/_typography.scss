@@ -1,8 +1,9 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h {
   font-family: $headings-font-family;
   line-height: $headings-line-height;
+  color: $black;
   margin: 0 0 30px;
-  color: $light-gray;
+  font-weight: 400;
 
   &:last-child {
     margin: 0;
@@ -12,22 +13,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .h {
 
 h1, .h1 {
   font-size: $h1-font-size;
-  font-weight: 700;
-  color: $light-gray;
+  color: $white;
   margin: 0 0 15px;
-  text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 h2, .h2 {
   font-size: $h2-font-size;
-  color: $dark-gray;
-  font-weight: 400;
+  color: $black;
 }
 
 h3, .h3 {
   font-size: $h3-font-size;
-  font-weight: 400;
 }
 
 h4, .h4 {
@@ -43,11 +40,11 @@ h6, .h6 {
 }
 
 a {
-  text-decoration: none;
-  color: $base-link-color;
-  outline: none;
+  @include animate(color, .3s, linear);
   font-weight: $base-link-font-weight;
-  @include animate(color, .3s, ease-in-out);
+  color: $base-link-color;
+  text-decoration: none;
+  outline: none;
 
   &:hover,
   &:focus {
@@ -61,6 +58,34 @@ p {
 
   &:last-child {
     margin: 0;
+  }
+
+}
+
+blockquote {
+  margin: 0;
+  padding: 0 40px;
+  color: $white;
+  line-height: 2.5;
+  quotes: none;
+  position: relative;
+
+  i {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    opacity: 0.25;
+  }
+
+  cite {
+    color: $white;
+    padding-top: 30px;
+    display: block;
+    font-size: 21px;
+    font-style: normal;
+    line-height: 1;
   }
 
 }

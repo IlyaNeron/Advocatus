@@ -20,69 +20,70 @@ $media-expressions: (
 // ligatured operators ≥ ≤
 
 // Colors
-$white: #fff !default;
-$dark-gray: #343434 !default;
-$red: #e7434e !default;
-$medium-gray: #717171;
-$light-gray: #f9fafe;
+$white: #fff;
+$yellow: #e8bf5d;
+$medium-gray: #666;
+$gray: #b9b9b9;
 $medium-dark: #555;
-$black: #000;
+$black: #111;
 
 // Fonts
-$base-font-sans-serif: "Open Sans", "Raleway", "Helvetica Neue", "Helvetica", sans-serif;
-$second-font-family: "Raleway", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+$base-font-sans-serif: "Open Sans", "Playfair Display", "Helvetica Neue", "Helvetica", sans-serif;
+$second-font-family: "Playfair Display", "Arial", "Helvetica Neue", "Helvetica", serif;
 
 // Body
 $base-background-color: $white !default;
 $font-size-base: 14px !default;
 $font-weight-base: 400 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 2 !default;
 $base-min-width: 320px !default;
-$base-color: $dark-gray !default;
+$base-color: $medium-gray !default;
 $base-font-family: $base-font-sans-serif;
 
 // Container
-$base-max-width: 1230px !default;
+$base-max-width: 1200px !default;
 $base-padding: 0 15px !default;
 
 // form
-$base-input-bg-color: $light-gray;
-$base-form-color: $medium-gray;
-$base-form-border-radius: 5px;
-$form-element-padding: 15px 20px !default;
-$form-element-border-color: $medium-gray !default;
-$form-element-focus-border-color: $red !default;
+$base-input-bg-color: $white;
+$base-form-color: $gray;
+$base-form-border-radius: 0;
+$form-element-padding: 10px 0 !default;
+$form-element-border-color: $gray !default;
+$form-element-focus-border-color: $yellow !default;
 $form-element-font-size: 14px !default;
 $form-element-line-height: 1 !default;
 $form-element-font-weight: 400 !default;
-$form-element-font-family: $second-font-family;
-$placeholder-color: $dark-gray !default;
-$placeholder-hover-color: $medium-gray;
+$form-element-font-family: $base-font-sans-serif;
+$form-element-font-style: italic;
+$placeholder-color: $gray !default;
+$placeholder-hover-color: $yellow;
 
 // Links
-$base-link-color: $white !default;
+$base-link-color: $black !default;
 $base-link-font-weight: 400 !default;
-$base-link-hover-color: $red !default;
+$base-link-hover-color: $yellow !default;
 
 // Buttons
-$btn-color: $dark-gray !default;
-$btn-border-radius: 5px !default;
-$btn-padding: 22px 15px !default;
-$btn-font-size: 14px !default;
-$btn-font-weight: 700 !default;
+$btn-color: $black !default;
+$btn-border-radius: 25px !default;
+$btn-padding: 15px !default;
+$btn-font-size: 16px !default;
+$btn-font-weight: 400 !default;
 $btn-line-height: 1 !default;
-$btn-background-color: transparent;
-$btn-min-width: 310px;
-$btn-border: 1px solid rgba($dark-gray, 0.3);
-$btn-secondary-border: 1px solid transparent;
+$btn-background-color: $yellow;
+$btn-min-width: 180px;
+$btn-border: 1px solid transparent;
+$btn-font-family: $second-font-family;
 
 // Headers
-$h1-font-size: 72px !default;
+$h1-font-size: 65px !default;
 $h2-font-size: 30px !default;
-$h3-font-size: 14px !default;
+$h3-font-size: 21px !default;
 $h4-font-size: 22px !default;
 $h5-font-size: 18px !default;
 $h6-font-size: 14px !default;
 $headings-line-height: 1;
 $headings-font-family: $second-font-family !default;
 $headings-second-font-family: $base-font-sans-serif;
+
