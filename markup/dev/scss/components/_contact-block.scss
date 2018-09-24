@@ -5,4 +5,35 @@
   margin: 0 auto 30px;
   position: relative;
   background: $white;
+
+  .form {
+    padding: 24px 15px 30px 0;
+  }
+
+  .map-block {
+    padding: 0 0 30px 45px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .contact-block {
+    padding: 30px 20px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .contact-block {
+    padding: 20px 15px;
+    margin: 0 -15px;
+
+    .form, .map-block {
+      padding: 0 0 30px;
+    }
+
+  }
+
 }

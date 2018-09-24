@@ -10,7 +10,7 @@
       a {
         color: $white;
         display: block;
-        padding: 16px 0 15px;
+        padding: 16px 40px 15px 0;
         font-weight: 700;
 
         &:hover {
@@ -27,7 +27,7 @@
           height: 3px;
           background: $white;
         }
-  
+
         &:before {
           content: '';
           position: absolute;
@@ -56,6 +56,24 @@
     padding: 35px 40px 70px;
     border-radius: 3px;
     margin: 0 15px 30px;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .tabs-content {
+    width: 45%;
+  }
+
+}
+
+@include media('<phone') {
+
+  .tabs-content {
+    width: 100%;
+    margin: 0;
+    padding: 15px 20px;
   }
 
 }

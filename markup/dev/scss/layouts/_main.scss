@@ -3,3 +3,19 @@
   z-index: 1;
   padding-top: 110px;
 }
+
+@include media('<tablet') {
+
+  .main {
+    padding-top: 98px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .main {
+    padding-top: 68px;
+  }
+
+}

@@ -1,10 +1,12 @@
-.section-form {
-  padding: 90px 0 40px;
+.section-area {
+  padding: 95px 0 20px;
   position: relative;
+  background: $black;
+  z-index: 1;
 
   &:after {
     content: '';
-    background-image: url('../img/bg-section-3.png');
+    background-image: url('../img/bg-section-4.png');
     background-repeat: repeat;
     position: absolute;
     top: 0;
@@ -13,24 +15,24 @@
     transform: translateX(-50%);
     width: 100%;
     max-width: 1200px;
-    z-index: -1;
     margin: 0 15px;
+    z-index: -1;
   }
 
 }
 
 @include media('<tablet') {
 
-  .section-form {
-    padding: 60px 0 30px;
+  .section-area {
+    padding: 60px 0 20px;
   }
 
 }
 
 @include media('<phone') {
 
-  .section-form {
-    padding: 30px 0 15px;;
+  .section-area {
+    padding: 30px 0 0;
   }
 
 }

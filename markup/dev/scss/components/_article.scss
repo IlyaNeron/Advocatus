@@ -1,6 +1,15 @@
 .article {
   line-height: 2;
-  border-bottom: 2px solid $yellow;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    border-bottom: 2px solid $yellow;
+  }
 
   &-image {
     display: block;
@@ -50,6 +59,22 @@
 
     .share {
       float: right;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .article {
+
+    .item-head {
+      margin: 0 0 20px;
+    }
+
+    .text {
+      margin: 0 0 15px;
     }
 
   }

@@ -28,3 +28,45 @@
   }
 
 }
+
+@include media('<tablet') {
+
+  .row {
+
+    h3 {
+      margin: 0 0 20px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .row {
+    margin: 0;
+
+    .col {
+      padding: 0 0 20px;
+
+      &-lg {
+        width: 100%;
+      }
+
+      &-md {
+        width: 100%;
+      }
+
+      &-sm {
+        width: 100%;
+      }
+
+      &-xl {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+}

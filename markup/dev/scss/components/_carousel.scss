@@ -55,22 +55,44 @@
         position: relative;
       }
 
-        &:before {
-          content: '';
-          width: 100%;
-          height: 100%;
-          background: $yellow;
-          position: absolute;
-          left: 20px;
-          top: 20px;
-        }
-
+      &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $yellow;
+        position: absolute;
+        left: 20px;
+        top: 20px;
       }
+
+    }
 
   }
 
   .quote-block {
     padding: 20px 50px 30px;
+  }
+
+}
+
+@include media('<phone') {
+
+  .slide {
+
+    .quote-block {
+      padding: 15px 0 20px;
+
+      blockquote {
+        padding: 0 0 0 40px;
+
+        cite {
+          padding-top: 20px;
+        }
+
+      }
+
+    }
+
   }
 
 }

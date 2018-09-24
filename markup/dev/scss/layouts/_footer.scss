@@ -14,9 +14,50 @@
 
   a {
     color: $white;
+    padding-left: 5px;
 
     &:hover {
       color: $yellow;
+    }
+
+  }
+
+}
+
+@include media('<tablet') {
+
+  .footer {
+    padding: 20px 0;
+  }
+
+}
+
+@include media('<phone') {
+
+  .footer {
+    padding: 10px 0;
+  }
+
+}
+
+@include media('<xs-phone') {
+  .footer {
+
+    &-wrapper {
+      display: table;
+      text-align: center;
+      width: 100%;
+
+      .copyright {
+        display: table-footer-group;
+        float: none;
+      }
+
+      .soc-icons {
+        display: table-header-group;
+        float: none;
+      }
+
     }
 
   }

@@ -16,12 +16,48 @@
       color: $white;
       font-family: $base-font-sans-serif;
     }
-  
+
   }
 
   .btn-primary {
     float: right;
     margin: 20px 0 0;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .block-name {
+
+    h1 {
+      font-size: 48px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+  }
+
+}
+
+@include media('<phone') {
+
+  .main-section-content {
+    bottom: 15px;
+  }
+
+  .block-name {
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
   }
 
 }
