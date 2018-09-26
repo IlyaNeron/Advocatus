@@ -1,22 +1,6 @@
 .section-person {
-  padding: 90px 0 70px;
+  padding: 90px 0 75px;
   position: relative;
-
-  &:after {
-    content: '';
-    background-image: url('../img/bg-section-3.png');
-    background-repeat: repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 1200px;
-    z-index: -1;
-    margin: 0 15px;
-  }
-
 }
 
 @include media('<tablet') {

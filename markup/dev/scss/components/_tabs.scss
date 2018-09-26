@@ -46,13 +46,12 @@
   }
 
   &-content {
-    @include inline-space(14px);
-    width: 40%;
+    @include inline-space(2.5, 14px);
+    width: 42%;
     vertical-align: top;
     display: inline-block;
     color: $black;
     background: $yellow;
-    line-height: 2.5;
     padding: 35px 40px 70px;
     border-radius: 3px;
     margin: 0 15px 30px;

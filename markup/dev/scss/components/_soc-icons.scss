@@ -4,27 +4,33 @@
   float: right;
 
   li {
-    @include inline-space(16px);
+    @include inline-space(1, 16px);
     display: inline-block;
     
     &:not(:last-child) {
-      padding-right: 15px;
+      padding-right: 5px;
     }
 
-    a {
-      display: block;
-      color: $white;
-      padding: 10px;
-      @include animate(border-radius background color);
+  }
 
-      &:hover {
-        border-radius: 50%;
-        background: $yellow;
-        color: $black;
-      }
+  a {
+    display: block;
+    color: $white;
+    width: 35px;
+    height: 35px;
+    @include animate(border-radius background color);
+    position: relative;
 
+    &:hover {
+      border-radius: 50%;
+      background: $yellow;
+      color: $black;
     }
 
+  }
+
+  i {
+    @include vertical-align-el;
   }
 
 }

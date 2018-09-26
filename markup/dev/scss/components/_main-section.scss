@@ -2,7 +2,7 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  height: calc(100vh - 110px);
+  height: calc(100vh - 109px);
   position: relative;
 
   &:before {
@@ -14,6 +14,22 @@
     right: 0;
     bottom: 0;
     opacity: 0.8;
+  }
+
+}
+
+@include media('<tablet') {
+
+  .main-section {
+    height: calc(100vh - 85px);
+  }
+
+}
+
+@include media('<phone') {
+
+  .main-section {
+    height: calc(100vh - 65px);
   }
 
 }

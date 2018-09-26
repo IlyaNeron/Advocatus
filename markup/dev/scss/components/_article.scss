@@ -14,14 +14,25 @@
   &-image {
     display: block;
     margin: 0 0 30px;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
   }
 
   .item-head {
     font-size: 16px;
-    margin: 0 0 40px;
+    margin: 0 0 30px;
 
     h3 {
       margin: 0 0 10px;
+
+      a {
+        display: inline-block;
+      }
+
     }
 
     .by {
@@ -41,11 +52,12 @@
   }
 
   .text {
-    line-height: 2;
-    margin: 0 0 30px;
+    line-height: 2.3;
+    margin: 0 0 24px;
   }
 
   .item-bottom {
+    @extend %clearfix;
     font-size: 16px;
     color: $black;
 
@@ -68,6 +80,10 @@
 @include media('<phone') {
 
   .article {
+
+    &:after {
+      content: none;
+    }
 
     .item-head {
       margin: 0 0 20px;

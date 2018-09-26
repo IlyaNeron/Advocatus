@@ -14,7 +14,6 @@
 
   a {
     color: $white;
-    padding-left: 5px;
 
     &:hover {
       color: $yellow;
@@ -42,22 +41,14 @@
 
 @include media('<xs-phone') {
   .footer {
+    text-align: center;
 
-    &-wrapper {
-      display: table;
-      text-align: center;
-      width: 100%;
+    .copyright {
+      float: none;
+    }
 
-      .copyright {
-        display: table-footer-group;
-        float: none;
-      }
-
-      .soc-icons {
-        display: table-header-group;
-        float: none;
-      }
-
+    .soc-icons {
+      float: none;
     }
 
   }

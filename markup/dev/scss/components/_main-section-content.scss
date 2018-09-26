@@ -1,16 +1,19 @@
 .main-section-content {
+  @include inline-space-reset;
   position: absolute;
-  bottom: 140px;
+  bottom: 110px;
   left: 0;
   right: 0;
-  max-width: 970px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 15px;
 
   .block-name {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     border-left: 2px solid $yellow;
-    padding-left: 15px;
+    padding: 0 15px;
+    width: 81%;
 
     h2 {
       color: $white;
@@ -20,22 +23,26 @@
   }
 
   .btn-primary {
-    float: right;
-    margin: 20px 0 0;
+    vertical-align: middle;
   }
 
 }
 
 @include media('<tablet') {
 
-  .block-name {
+  .main-section-content {
 
-    h1 {
-      font-size: 48px;
-    }
+    .block-name {
+      width: 75%;
 
-    h2 {
-      font-size: 24px;
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
     }
 
   }
@@ -46,16 +53,19 @@
 
   .main-section-content {
     bottom: 15px;
-  }
 
-  .block-name {
+    .block-name {
+      width: 100%;
+      margin-bottom: 15px;
 
-    h1 {
-      font-size: 32px;
-    }
+      h1 {
+        font-size: 32px;
+      }
 
-    h2 {
-      font-size: 20px;
+      h2 {
+        font-size: 20px;
+      }
+
     }
 
   }

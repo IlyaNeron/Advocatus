@@ -3,7 +3,7 @@
   margin: 0 -15px;
 
   .col {
-    @include inline-space(14px);
+    @include inline-space(1, 14px);
     display: inline-block;
     vertical-align: top;
     padding: 0 15px 30px;
@@ -49,22 +49,10 @@
     .col {
       padding: 0 0 20px;
 
-      &-lg {
+      &-lg, &-md, &-sm, &-xl {
         width: 100%;
       }
-
-      &-md {
-        width: 100%;
-      }
-
-      &-sm {
-        width: 100%;
-      }
-
-      &-xl {
-        width: 100%;
-      }
-
+      
     }
 
   }
