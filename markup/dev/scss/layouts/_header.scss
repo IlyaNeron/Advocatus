@@ -6,6 +6,13 @@
   padding: 48px 0 31px;
   z-index: 2;
   background: #fff;
+  @include animate(padding box-shadow);
+
+  &.fixed-position  {
+    box-shadow: 0 0 20px 0px rgba($black, 1);
+    padding: 30px 0;
+  }
+
 }
 
 @include media('<tablet') {

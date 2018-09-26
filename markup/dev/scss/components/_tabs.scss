@@ -7,45 +7,66 @@
       border-bottom: 1px solid $yellow;
       position: relative;
 
-      a {
-        color: $white;
-        display: block;
-        padding: 16px 40px 15px 0;
-        font-weight: 700;
+      &.active {
 
-        &:hover {
+        a {
           color: $yellow;
-        }
 
-        &:after {
-          content: '';
-          position: absolute;
-          right: 15px;
-          top: 50%;
-          transform: translateY(-50%);
-          width: 11px;
-          height: 3px;
-          background: $white;
-        }
+          &:after, &:before {
+            background: $yellow;
+            @include animate(background transform);
+          }
 
-        &:before {
-          content: '';
-          position: absolute;
-          right: 19px;
-          top: 50%;
-          transform: translateY(-50%);
-          height: 11px;
-          width: 3px;
-          background: $white;
+          &:after {
+            transform: translateY(-50%) rotate(-180deg);
+          }
+
+          &:before {
+            transform: translateY(-50%) rotate(-180deg);
+          }
+
         }
 
       }
 
     }
 
+    a {
+      color: $white;
+      display: block;
+      padding: 16px 40px 15px 0;
+      font-weight: 700;
+
+      &:hover {
+        color: $yellow;
+
+        &:after, &:before {
+          background: $yellow;
+          @include animate(background transform);
+        }
+
+      }
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 11px;
+        height: 3px;
+        background: $white;
+      }
+
+      &:before {
+        transform: translateY(-50%) rotate(-90deg);
+      }
+
+    }
+
   }
 
-  &-content {
+  .tab-content {
     @include inline-space(2.5, 14px);
     width: 42%;
     vertical-align: top;
@@ -59,20 +80,36 @@
 
 }
 
+.js-tab-hidden {
+  display: block !important;
+  left: -9999px !important;
+  position: absolute !important;
+  top: -9999px !important;
+}
+
+
 @include media('<tablet') {
 
-  .tabs-content {
-    width: 45%;
+  .tabs {
+
+    .tab-content {
+      width: 45%;
+    }
+
   }
 
 }
 
 @include media('<phone') {
 
-  .tabs-content {
-    width: 100%;
-    margin: 0;
-    padding: 15px 20px;
+  .tabs {
+
+    .tab-content {
+      width: 100%;
+      margin: 0;
+      padding: 15px 20px;
+    }
+
   }
 
 }

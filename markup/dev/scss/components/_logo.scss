@@ -11,3 +11,11 @@
   }
 
 }
+
+@include media('<tablet') {
+
+  .logo {
+    padding-top: 5px;
+  }
+
+}
